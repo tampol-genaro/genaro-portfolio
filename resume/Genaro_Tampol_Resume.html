@@ -68,11 +68,38 @@
     .skills {
       margin-bottom: 0;
     }
+
+    .header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 16px;
+      margin-bottom: 10px;
+    }
+
+    .header-info {
+      flex: 1;
+    }
+
+    .photo {
+      width: 90px;
+      height: 90px;
+      border-radius: 50%;
+      object-fit: cover;
+      object-position: center 15%;
+      border: 2px solid #000000;
+      flex-shrink: 0;
+    }
   </style>
 </head>
 <body>
-  <h1>Genaro Lucas C. Tampol</h1>
-  <p class="contact">Tanauan City, Batangas | +63 934 995 1281 | genarotampol13@gmail.com</p>
+  <div class="header">
+    <div class="header-info">
+      <h1>Genaro Lucas C. Tampol</h1>
+      <p class="contact">Tanauan City, Batangas | +63 934 995 1281 | genarotampol13@gmail.com</p>
+    </div>
+    <img src="profile.png" alt="Genaro Lucas C. Tampol" class="photo" width="90" height="90">
+  </div>
 
   <h2>Professional Summary</h2>
   <p>Aspiring IT professional and BSIT graduate building foundational skills through hands-on homelab projects. Familiar with Windows Server 2022, Active Directory, networking basics, remote troubleshooting, and IT support tools. Eager to start an entry-level IT career and grow in a professional environment.</p>
