@@ -2,17 +2,7 @@ GENARO LUCAS C. TAMPOL
 Tanauan City, Batangas | +63 934 995 1281 | genarotampol13@gmail.com
 
 PROFESSIONAL SUMMARY
-BSIT graduate with hands-on IT support, systems administration, and network infrastructure experience. Skilled in Windows Server 2022, Active Directory, helpdesk workflows, and remote troubleshooting. Seeking IT Support, Helpdesk (L1-L3), SysAdmin, Network Admin, or Cloud Engineer roles.
-
-PROFESSIONAL EXPERIENCE
-
-Data Research Intern
-Orkestra Communications, Quezon City
-January 2026 - May 2026
-- Performed data validation, cleaning, and quality assurance checks
-- Identified inconsistencies and improved data accuracy across records
-- Supported workflow improvements by organizing structured data processes
-- Collaborated with team members to maintain data integrity and reporting accuracy
+Aspiring IT professional and BSIT graduate building foundational skills through hands-on homelab projects. Familiar with Windows Server 2022, Active Directory, networking basics, remote troubleshooting, and IT support tools. Eager to start an entry-level IT career and grow in a professional environment.
 
 EDUCATION
 
@@ -25,7 +15,7 @@ FIDELIS Senior High School
 2020 - 2022
 
 TECHNICAL SKILLS
-IT Helpdesk (L1-L3), Windows OS Troubleshooting, Windows Server 2022, Active Directory, System Administration, Network Administration, DNS and IP Configuration, Hardware Troubleshooting, Remote Desktop Support, Ticketing Systems, Microsoft Office, Cloud Fundamentals, UTM Virtualization, Cisco Packet Tracer, Spiceworks, AnyDesk, TeamViewer
+Windows OS Troubleshooting, Windows Server 2022, Active Directory, DNS and IP Configuration, Hardware Troubleshooting, Remote Desktop Support, Ticketing Systems, Microsoft Office, Cloud Fundamentals, UTM Virtualization, Cisco Packet Tracer, Spiceworks, AnyDesk, TeamViewer
 
 HOMELAB AND HANDS-ON PROJECTS
 - UTM VMs: Windows Server 2022 and Linux on Mac for AD and server admin practice
