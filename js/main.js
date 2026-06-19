@@ -139,9 +139,9 @@
   if (typedEl) {
     const phrases = [
       'Aspiring IT Professional',
-      'Entry-Level IT Candidate',
+      'Self-Study Learner',
       'Homelab Builder',
-      'IT Support Enthusiast'
+      'Entry-Level IT Candidate'
     ];
     let phraseIndex = 0;
     let charIndex = 0;

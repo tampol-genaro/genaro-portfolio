@@ -2,7 +2,7 @@ GENARO LUCAS C. TAMPOL
 Tanauan City, Batangas | +63 934 995 1281 | genarotampol13@gmail.com
 
 PROFESSIONAL SUMMARY
-Aspiring IT professional and BSIT graduate building foundational skills through hands-on homelab projects. Familiar with Windows Server 2022, Active Directory, networking basics, remote troubleshooting, and IT support tools. Eager to start an entry-level IT career and grow in a professional environment.
+Aspiring IT professional and BSIT graduate building foundational skills through self-study and homelab projects. Learning Windows Server 2022, Active Directory, networking basics, and IT support tools. No professional work experience yet — eager to start an entry-level IT career.
 
 EDUCATION
 
@@ -15,13 +15,13 @@ FIDELIS Senior High School
 2020 - 2022
 
 TECHNICAL SKILLS
-Windows OS Troubleshooting, Windows Server 2022, Active Directory, DNS and IP Configuration, Hardware Troubleshooting, Remote Desktop Support, Ticketing Systems, Microsoft Office, Cloud Fundamentals, UTM Virtualization, Cisco Packet Tracer, Spiceworks, AnyDesk, TeamViewer
+Windows OS Basics, Windows Server 2022, Active Directory, DNS and IP Configuration, Hardware Basics, Remote Desktop Tools, Ticketing Systems, Microsoft Office, Cloud Fundamentals, UTM Virtualization, Cisco Packet Tracer, Spiceworks, AnyDesk, TeamViewer
 
-HOMELAB AND HANDS-ON PROJECTS
-- UTM VMs: Windows Server 2022 and Linux on Mac for AD and server admin practice
+SELF-STUDY HOMELAB PROJECTS
+- UTM VMs: Windows Server 2022 and Linux on Mac for AD and server practice
 - Active Directory: Domain controller, users, groups, OUs, and GPO configuration
 - Cisco Packet Tracer: Routers, switches, VLANs, IP addressing, and DNS labs
-- Spiceworks: Helpdesk ticket logging, categorization, and resolution tracking
+- Spiceworks: Ticketing system practice in homelab
 
 CERTIFICATIONS
 Information Technology Fundamentals (IBM) | Operating Systems Support (Cisco) | IT Customer Support (Cisco) | Security and Connectivity Support (Cisco) | Hardware and Upgrade Support (Cisco)
