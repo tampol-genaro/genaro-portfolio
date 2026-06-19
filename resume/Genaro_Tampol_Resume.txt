@@ -2,7 +2,7 @@ GENARO LUCAS C. TAMPOL
 Tanauan City, Batangas | +63 934 995 1281 | genarotampol13@gmail.com
 
 PROFESSIONAL SUMMARY
-Aspiring IT professional and BSIT graduate building foundational skills through self-study and homelab projects. Learning Windows Server 2022, Active Directory, networking basics, and IT support tools. No professional work experience yet — eager to start an entry-level IT career.
+Aspiring IT professional and BSIT graduate building foundational skills through self-study and homelab projects. Learning Windows Server 2022, Active Directory, networking basics, and IT support tools. No professional work experience yet, eager to start an entry-level IT career.
 
 EDUCATION
 
@@ -10,7 +10,7 @@ Bachelor of Science in Information Technology
 FAITH Colleges
 2022 - 2026
 
-Bachelor of Information Systems
+STEM
 FIDELIS Senior High School
 2020 - 2022
 
