@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Genaro Lucas C. Tampol — IT Infrastructure Resume</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    @page {
+      size: A4;
+      margin: 0;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Open Sans', Arial, sans-serif;
+      font-size: 9.5pt;
+      line-height: 1.45;
+      color: #2d3748;
+      background: #fff;
+      -webkit-print-color-adjust: exact;
+      print-color-adjust: exact;
+    }
+
+    .resume {
+      display: grid;
+      grid-template-columns: 220px 1fr;
+      width: 210mm;
+      min-height: 297mm;
+      margin: 0 auto;
+      overflow: hidden;
+    }
+
+    /* Sidebar */
+    .sidebar {
+      background: linear-gradient(180deg, #1e3a5f 0%, #0f2744 100%);
+      color: #fff;
+      padding: 28px 20px;
+    }
+
+    .photo-wrap {
+      width: 130px;
+      height: 130px;
+      margin: 0 auto 20px;
+      border-radius: 50%;
+      overflow: hidden;
+      border: 4px solid rgba(255, 255, 255, 0.25);
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.25);
+    }
+
+    .photo-wrap img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center 12%;
+    }
+
+    .sidebar h1 {
+      font-family: 'Montserrat', sans-serif;
+      font-size: 13pt;
+      font-weight: 700;
+      text-align: center;
+      line-height: 1.25;
+      margin-bottom: 4px;
+      letter-spacing: 0.3px;
+    }
+
+    .sidebar .title {
+      text-align: center;
+      font-size: 8pt;
+      color: #93c5fd;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.8px;
+      margin-bottom: 22px;
+      line-height: 1.4;
+    }
+
+    .sidebar-section {
+      margin-bottom: 18px;
+    }
+
+    .sidebar-section h2 {
+      font-family: 'Montserrat', sans-serif;
+      font-size: 8.5pt;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      color: #60a5fa;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+      padding-bottom: 5px;
+      margin-bottom: 10px;
+    }
+
+    .contact-item {
+      display: flex;
+      gap: 8px;
+      align-items: flex-start;
+      margin-bottom: 8px;
+      font-size: 8pt;
+      line-height: 1.35;
+      word-break: break-word;
+    }
+
+    .contact-icon {
+      flex-shrink: 0;
+      width: 14px;
+      text-align: center;
+      color: #93c5fd;
+      font-size: 9pt;
+    }
+
+    .skill-list li,
+    .cert-list li {
+      font-size: 8pt;
+      margin-bottom: 6px;
+      padding-left: 12px;
+      position: relative;
+      line-height: 1.35;
+    }
+
+    .skill-list li::before,
+    .cert-list li::before {
+      content: '▸';
+      position: absolute;
+      left: 0;
+      color: #60a5fa;
+      font-size: 7pt;
+    }
+
+    .cert-list .issuer {
+      display: block;
+      color: #93c5fd;
+      font-size: 7pt;
+      margin-top: 1px;
+    }
+
+    /* Main */
+    .main {
+      padding: 28px 26px 24px 24px;
+    }
+
+    .main-section {
+      margin-bottom: 16px;
+    }
+
+    .main-section h2 {
+      font-family: 'Montserrat', sans-serif;
+      font-size: 10.5pt;
+      font-weight: 700;
+      color: #1e3a5f;
+      text-transform: uppercase;
+      letter-spacing: 0.8px;
+      border-bottom: 2px solid #1e3a5f;
+      padding-bottom: 4px;
+      margin-bottom: 10px;
+    }
+
+    .summary {
+      font-size: 9.5pt;
+      color: #4a5568;
+      text-align: justify;
+    }
+
+    .entry {
+      margin-bottom: 12px;
+    }
+
+    .entry:last-child {
+      margin-bottom: 0;
+    }
+
+    .entry-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      gap: 12px;
+      margin-bottom: 2px;
+    }
+
+    .entry-title {
+      font-family: 'Montserrat', sans-serif;
+      font-size: 9.5pt;
+      font-weight: 700;
+      color: #1a202c;
+    }
+
+    .entry-date {
+      font-size: 8pt;
+      color: #718096;
+      white-space: nowrap;
+      font-weight: 600;
+    }
+
+    .entry-org {
+      font-size: 8.5pt;
+      color: #1e3a5f;
+      font-weight: 600;
+      margin-bottom: 5px;
+    }
+
+    .entry ul {
+      padding-left: 14px;
+    }
+
+    .entry li {
+      font-size: 8.5pt;
+      color: #4a5568;
+      margin-bottom: 3px;
+    }
+
+    .entry p {
+      font-size: 8.5pt;
+      color: #4a5568;
+    }
+
+    .homelab-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 8px;
+    }
+
+    .homelab-item {
+      background: #f7fafc;
+      border-left: 3px solid #1e3a5f;
+      padding: 8px 10px;
+      border-radius: 0 4px 4px 0;
+    }
+
+    .homelab-item h4 {
+      font-family: 'Montserrat', sans-serif;
+      font-size: 8pt;
+      font-weight: 700;
+      color: #1e3a5f;
+      margin-bottom: 2px;
+    }
+
+    .homelab-item p {
+      font-size: 7.5pt;
+      color: #4a5568;
+      line-height: 1.35;
+    }
+
+    .roles-tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 5px;
+      margin-top: 6px;
+    }
+
+    .role-tag {
+      font-size: 7pt;
+      font-weight: 600;
+      padding: 3px 8px;
+      background: #ebf4ff;
+      color: #1e3a5f;
+      border-radius: 20px;
+      border: 1px solid #bee3f8;
+    }
+
+    @media print {
+      body {
+        background: #fff;
+      }
+
+      .resume {
+        width: 100%;
+        min-height: auto;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="resume">
+    <aside class="sidebar">
+      <div class="photo-wrap">
+        <img src="profile.png" alt="Genaro Lucas C. Tampol">
+      </div>
+      <h1>Genaro Lucas C. Tampol</h1>
+      <p class="title">IT Support &amp; Infrastructure Professional</p>
+
+      <div class="sidebar-section">
+        <h2>Contact</h2>
+        <div class="contact-item">
+          <span class="contact-icon">📞</span>
+          <span>+63 934 995 1281</span>
+        </div>
+        <div class="contact-item">
+          <span class="contact-icon">✉️</span>
+          <span>genarotampol13@gmail.com</span>
+        </div>
+        <div class="contact-item">
+          <span class="contact-icon">📍</span>
+          <span>Tanauan City, Batangas</span>
+        </div>
+      </div>
+
+      <div class="sidebar-section">
+        <h2>Core Skills</h2>
+        <ul class="skill-list">
+          <li>IT Helpdesk (L1–L3)</li>
+          <li>Windows OS Troubleshooting</li>
+          <li>Windows Server 2022</li>
+          <li>Active Directory</li>
+          <li>System Administration</li>
+          <li>Network Administration</li>
+          <li>DNS &amp; IP Configuration</li>
+          <li>Hardware Troubleshooting</li>
+          <li>Remote Desktop Support</li>
+          <li>Ticketing Systems</li>
+          <li>Microsoft Office Suite</li>
+          <li>Cloud Fundamentals</li>
+        </ul>
+      </div>
+
+      <div class="sidebar-section">
+        <h2>Tools</h2>
+        <ul class="skill-list">
+          <li>UTM (Virtualization)</li>
+          <li>Cisco Packet Tracer</li>
+          <li>Spiceworks</li>
+          <li>AnyDesk / TeamViewer</li>
+          <li>Remote Desktop</li>
+        </ul>
+      </div>
+
+      <div class="sidebar-section">
+        <h2>Certificates</h2>
+        <ul class="cert-list">
+          <li>Information Technology Fundamentals<span class="issuer">IBM SkillsBuild</span></li>
+          <li>Operating Systems Support<span class="issuer">Cisco Networking Academy</span></li>
+          <li>IT Customer Support<span class="issuer">Cisco Networking Academy</span></li>
+          <li>Security &amp; Connectivity Support<span class="issuer">Cisco Networking Academy</span></li>
+          <li>Hardware &amp; Upgrade Support<span class="issuer">Cisco Networking Academy</span></li>
+        </ul>
+      </div>
+    </aside>
+
+    <main class="main">
+      <section class="main-section">
+        <h2>Professional Summary</h2>
+        <p class="summary">
+          Motivated BSIT graduate with hands-on experience in IT support, systems administration,
+          and network infrastructure. Skilled in Windows Server 2022, Active Directory, helpdesk
+          workflows, and remote troubleshooting. Seeking roles in IT Support, Helpdesk (L1–L3),
+          Systems Administration, Network Administration, or Cloud Engineering where I can deliver
+          reliable technical support and maintain secure, well-managed IT environments.
+        </p>
+        <div class="roles-tags">
+          <span class="role-tag">IT Support</span>
+          <span class="role-tag">Helpdesk L1–L3</span>
+          <span class="role-tag">SysAdmin</span>
+          <span class="role-tag">Network Admin</span>
+          <span class="role-tag">Cloud Engineer</span>
+        </div>
+      </section>
+
+      <section class="main-section">
+        <h2>Professional Experience</h2>
+        <article class="entry">
+          <div class="entry-header">
+            <span class="entry-title">Data Research Intern</span>
+            <span class="entry-date">Jan 2026 – May 2026</span>
+          </div>
+          <p class="entry-org">Orkestra Communications — Quezon City</p>
+          <ul>
+            <li>Performed data validation, cleaning, and quality assurance checks</li>
+            <li>Identified inconsistencies and improved data accuracy across records</li>
+            <li>Supported workflow improvements by organizing structured data processes</li>
+            <li>Collaborated with team members to maintain data integrity and reporting accuracy</li>
+          </ul>
+        </article>
+      </section>
+
+      <section class="main-section">
+        <h2>Homelab &amp; Hands-On Projects</h2>
+        <div class="homelab-grid">
+          <div class="homelab-item">
+            <h4>UTM Virtual Machines</h4>
+            <p>Run Windows Server 2022 and Linux VMs on Mac using UTM for enterprise server and AD practice.</p>
+          </div>
+          <div class="homelab-item">
+            <h4>Active Directory Homelab</h4>
+            <p>Built AD domain on Server 2022 — users, groups, OUs, GPOs, and domain-joined workstations.</p>
+          </div>
+          <div class="homelab-item">
+            <h4>Cisco Packet Tracer</h4>
+            <p>Designed network topologies — routers, switches, VLANs, IP addressing, and DNS configuration.</p>
+          </div>
+          <div class="homelab-item">
+            <h4>Spiceworks Ticketing</h4>
+            <p>Practiced helpdesk workflows — ticket logging, categorization, resolution tracking, and documentation.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="main-section">
+        <h2>Education</h2>
+        <article class="entry">
+          <div class="entry-header">
+            <span class="entry-title">Bachelor of Science in Information Technology</span>
+            <span class="entry-date">2022 – 2026</span>
+          </div>
+          <p class="entry-org">FAITH Colleges</p>
+          <p>Focused on networking, systems administration, IT support, and infrastructure management.</p>
+        </article>
+        <article class="entry">
+          <div class="entry-header">
+            <span class="entry-title">Bachelor of Information Systems</span>
+            <span class="entry-date">2020 – 2022</span>
+          </div>
+          <p class="entry-org">FIDELIS Senior High School</p>
+          <p>Foundations in information systems, programming logic, and technology concepts.</p>
+        </article>
+      </section>
+
+      <section class="main-section">
+        <h2>Technical Competencies</h2>
+        <article class="entry">
+          <p><strong>Systems &amp; Administration:</strong> Windows OS troubleshooting, system updates, maintenance, performance optimization, Microsoft Server 2022, Active Directory (homelabs), basic system administration.</p>
+        </article>
+        <article class="entry">
+          <p><strong>Networking:</strong> Basic networking (IP configuration, DNS, connectivity), Cisco Packet Tracer simulations, VLAN and subnet design, connectivity troubleshooting.</p>
+        </article>
+        <article class="entry">
+          <p><strong>Support &amp; Hardware:</strong> IT helpdesk L1–L3 support, Spiceworks ticketing, remote desktop tools (AnyDesk, TeamViewer), PC setup, hardware diagnostics and upgrades.</p>
+        </article>
+      </section>
+    </main>
+  </div>
+</body>
+</html>

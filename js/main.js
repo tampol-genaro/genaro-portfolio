@@ -138,10 +138,10 @@
   const typedEl = document.getElementById('typedText');
   if (typedEl) {
     const phrases = [
-      'Junior AI Engineer',
-      'Python Developer',
-      'Homelab Builder',
-      'IT Infrastructure Enthusiast'
+      'IT Support Specialist',
+      'Systems Administrator',
+      'Network Administrator',
+      'Helpdesk Technician'
     ];
     let phraseIndex = 0;
     let charIndex = 0;
