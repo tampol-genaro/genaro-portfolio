@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Portfolio of Genaro Lucas C. Tampol — BSIT student & aspiring Junior AI Engineer specializing in AI, IT infrastructure, and homelab projects.">
+  <title>Genaro Tampol | Junior AI Engineer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <canvas id="particles" aria-hidden="true"></canvas>
+
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="#home" class="nav-logo">GT<span class="accent">.</span></a>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#home" class="nav-link active">Home</a></li>
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#labs" class="nav-link">Labs</a></li>
+        <li><a href="#skills" class="nav-link">Skills</a></li>
+        <li><a href="#certificates" class="nav-link">Certificates</a></li>
+        <li><a href="#experience" class="nav-link">Experience</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <main>
+    <!-- Hero -->
+    <section id="home" class="hero">
+      <div class="hero-content">
+        <div class="hero-badge reveal">Available for opportunities</div>
+        <div class="hero-profile reveal">
+          <div class="profile-ring">
+            <img src="images/profile.png" alt="Genaro Lucas C. Tampol" class="profile-img" width="160" height="160">
+          </div>
+        </div>
+        <p class="hero-greeting reveal">Hello, I'm</p>
+        <h1 class="hero-name reveal">Genaro Lucas C. Tampol</h1>
+        <div class="hero-typed reveal">
+          <span id="typedText"></span><span class="cursor">|</span>
+        </div>
+        <p class="hero-location reveal">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+          Tanauan City, Batangas
+        </p>
+        <div class="hero-cta reveal">
+          <a href="#labs" class="btn btn-primary">View My Labs</a>
+          <a href="#contact" class="btn btn-outline">Get In Touch</a>
+        </div>
+        <div class="hero-stats reveal">
+          <div class="stat">
+            <span class="stat-number" data-count="5">0</span>
+            <span class="stat-label">Certificates</span>
+          </div>
+          <div class="stat">
+            <span class="stat-number" data-count="4">0</span>
+            <span class="stat-label">Homelab Projects</span>
+          </div>
+          <div class="stat">
+            <span class="stat-number" data-count="10">0</span>
+            <span class="stat-label">Core Skills</span>
+          </div>
+        </div>
+      </div>
+      <a href="#about" class="scroll-indicator" aria-label="Scroll to about section">
+        <span></span>
+      </a>
+    </section>
+
+    <!-- About -->
+    <section id="about" class="section">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-tag">About Me</span>
+          <h2 class="section-title">Building the bridge between <span class="gradient-text">AI &amp; Infrastructure</span></h2>
+        </div>
+        <div class="about-grid">
+          <div class="about-card glass reveal">
+            <div class="terminal">
+              <div class="terminal-header">
+                <span class="dot red"></span>
+                <span class="dot yellow"></span>
+                <span class="dot green"></span>
+                <span class="terminal-title">genaro@portfolio ~ %</span>
+              </div>
+              <div class="terminal-body" id="terminalBody">
+                <p><span class="prompt">$</span> whoami</p>
+                <p class="output">Genaro Lucas C. Tampol</p>
+                <p><span class="prompt">$</span> cat role.txt</p>
+                <p class="output">Junior AI Engineer (Aspiring)</p>
+                <p><span class="prompt">$</span> cat education.txt</p>
+                <p class="output">BSIT @ FAITH Colleges (2022–2026)</p>
+                <p><span class="prompt">$</span> <span class="blink">_</span></p>
+              </div>
+            </div>
+          </div>
+          <div class="about-text reveal">
+            <p class="lead">
+              Motivated BSIT student with foundational knowledge in <strong>Artificial Intelligence</strong>,
+              <strong>Python programming</strong>, and <strong>API integration</strong>.
+            </p>
+            <p>
+              I'm seeking a Junior AI Engineer position where I can apply my skills in
+              LLM tools, prompt engineering, and AI-assisted development to build practical
+              AI solutions — while leveraging hands-on IT infrastructure experience from my homelab.
+            </p>
+            <div class="about-highlights">
+              <div class="highlight-item">
+                <div class="highlight-icon">🤖</div>
+                <div>
+                  <h4>AI &amp; Development</h4>
+                  <p>Python, LLMs, prompt engineering, API integration</p>
+                </div>
+              </div>
+              <div class="highlight-item">
+                <div class="highlight-icon">🖥️</div>
+                <div>
+                  <h4>IT Infrastructure</h4>
+                  <p>Windows Server 2022, Active Directory, virtualization</p>
+                </div>
+              </div>
+              <div class="highlight-item">
+                <div class="highlight-icon">🌐</div>
+                <div>
+                  <h4>Networking &amp; Support</h4>
+                  <p>Cisco Packet Tracer, DNS/IP config, Spiceworks ticketing</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Labs / Projects -->
+    <section id="labs" class="section section-alt">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-tag">Homelab &amp; Projects</span>
+          <h2 class="section-title">Hands-on <span class="gradient-text">Labs &amp; Tools</span></h2>
+          <p class="section-desc">Real-world practice beyond the classroom — building, breaking, and fixing in my own environment.</p>
+        </div>
+        <div class="labs-grid">
+          <article class="lab-card glass reveal" data-tilt>
+            <div class="lab-icon utm">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/><path d="M7 8h2M7 11h4"/></svg>
+            </div>
+            <span class="lab-tag">Virtualization</span>
+            <h3>UTM Virtual Machines</h3>
+            <p>Running full Windows Server 2022 and Linux VMs on my Mac using UTM — bridging Apple Silicon with enterprise Windows environments for real AD and server admin practice.</p>
+            <ul class="lab-features">
+              <li>Mac-native VM orchestration</li>
+              <li>Windows Server 2022 instances</li>
+              <li>Cross-platform networking</li>
+            </ul>
+          </article>
+
+          <article class="lab-card glass reveal" data-tilt>
+            <div class="lab-icon ad">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
+            </div>
+            <span class="lab-tag">Server Admin</span>
+            <h3>Active Directory Homelab</h3>
+            <p>Built a full Active Directory domain on Windows Server 2022 — creating users, groups, OUs, Group Policies, and domain-joined workstations in a controlled homelab.</p>
+            <ul class="lab-features">
+              <li>Domain Controller setup</li>
+              <li>User &amp; group management</li>
+              <li>GPO configuration</li>
+            </ul>
+          </article>
+
+          <article class="lab-card glass reveal" data-tilt>
+            <div class="lab-icon cisco">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+            </div>
+            <span class="lab-tag">Networking</span>
+            <h3>Cisco Packet Tracer</h3>
+            <p>Designed and simulated network topologies — configuring routers, switches, VLANs, IP addressing, DNS, and troubleshooting connectivity in virtual lab environments.</p>
+            <ul class="lab-features">
+              <li>Router &amp; switch config</li>
+              <li>VLAN &amp; subnet design</li>
+              <li>DNS &amp; connectivity labs</li>
+            </ul>
+          </article>
+
+          <article class="lab-card glass reveal" data-tilt>
+            <div class="lab-icon spiceworks">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg>
+            </div>
+            <span class="lab-tag">IT Support</span>
+            <h3>Spiceworks Ticketing</h3>
+            <p>Practiced IT helpdesk workflows using Spiceworks — logging tickets, categorizing issues, tracking resolution times, and maintaining support documentation.</p>
+            <ul class="lab-features">
+              <li>Ticket lifecycle management</li>
+              <li>Issue categorization</li>
+              <li>Support documentation</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills -->
+    <section id="skills" class="section">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-tag">Skills</span>
+          <h2 class="section-title">Technical <span class="gradient-text">Toolkit</span></h2>
+        </div>
+        <div class="skills-wrapper">
+          <div class="skill-category reveal">
+            <h3>AI &amp; Development</h3>
+            <div class="skill-bars">
+              <div class="skill-bar" data-skill="Python" data-percent="80">
+                <div class="skill-info"><span>Python</span><span>80%</span></div>
+                <div class="skill-track"><div class="skill-fill"></div></div>
+              </div>
+              <div class="skill-bar" data-skill="LLM & Prompt Engineering" data-percent="75">
+                <div class="skill-info"><span>LLM &amp; Prompt Engineering</span><span>75%</span></div>
+                <div class="skill-track"><div class="skill-fill"></div></div>
+              </div>
+              <div class="skill-bar" data-skill="API Integration" data-percent="70">
+                <div class="skill-info"><span>API Integration</span><span>70%</span></div>
+                <div class="skill-track"><div class="skill-fill"></div></div>
+              </div>
+            </div>
+          </div>
+          <div class="skill-category reveal">
+            <h3>Systems &amp; Infrastructure</h3>
+            <div class="skill-bars">
+              <div class="skill-bar" data-skill="Windows Server 2022" data-percent="85">
+                <div class="skill-info"><span>Windows Server 2022</span><span>85%</span></div>
+                <div class="skill-track"><div class="skill-fill"></div></div>
+              </div>
+              <div class="skill-bar" data-skill="Active Directory" data-percent="80">
+                <div class="skill-info"><span>Active Directory</span><span>80%</span></div>
+                <div class="skill-track"><div class="skill-fill"></div></div>
+              </div>
+              <div class="skill-bar" data-skill="System Administration" data-percent="80">
+                <div class="skill-info"><span>System Administration</span><span>80%</span></div>
+                <div class="skill-track"><div class="skill-fill"></div></div>
+              </div>
+            </div>
+          </div>
+          <div class="skill-pills reveal">
+            <h3>Tools &amp; Technologies</h3>
+            <div class="pills">
+              <span class="pill">UTM</span>
+              <span class="pill">Cisco Packet Tracer</span>
+              <span class="pill">Spiceworks</span>
+              <span class="pill">Microsoft Office</span>
+              <span class="pill">AnyDesk</span>
+              <span class="pill">TeamViewer</span>
+              <span class="pill">DNS / IP Config</span>
+              <span class="pill">Hardware Troubleshooting</span>
+              <span class="pill">Remote Desktop</span>
+              <span class="pill">AI-Assisted Dev</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Certificates -->
+    <section id="certificates" class="section section-alt">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-tag">Credentials</span>
+          <h2 class="section-title">Professional <span class="gradient-text">Certificates</span></h2>
+          <p class="section-desc">Industry-recognized certifications from IBM and Cisco validating my IT fundamentals.</p>
+        </div>
+        <div class="cert-grid">
+          <article class="cert-card glass reveal" data-issuer="ibm">
+            <div class="cert-badge ibm">IBM</div>
+            <h3>Information Technology Fundamentals</h3>
+            <p>Core IT concepts including hardware, software, networking, and security fundamentals.</p>
+            <div class="cert-footer">
+              <span class="cert-issuer">IBM SkillsBuild</span>
+              <span class="cert-status">Verified</span>
+            </div>
+          </article>
+
+          <article class="cert-card glass reveal" data-issuer="cisco">
+            <div class="cert-badge cisco">Cisco</div>
+            <h3>Operating Systems Support</h3>
+            <p>Installing, configuring, and troubleshooting desktop and server operating systems.</p>
+            <div class="cert-footer">
+              <span class="cert-issuer">Cisco Networking Academy</span>
+              <span class="cert-status">Verified</span>
+            </div>
+          </article>
+
+          <article class="cert-card glass reveal" data-issuer="cisco">
+            <div class="cert-badge cisco">Cisco</div>
+            <h3>IT Customer Support</h3>
+            <p>Delivering professional customer support, communication, and problem resolution.</p>
+            <div class="cert-footer">
+              <span class="cert-issuer">Cisco Networking Academy</span>
+              <span class="cert-status">Verified</span>
+            </div>
+          </article>
+
+          <article class="cert-card glass reveal" data-issuer="cisco">
+            <div class="cert-badge cisco">Cisco</div>
+            <h3>Security and Connectivity Support</h3>
+            <p>Network security principles, connectivity troubleshooting, and secure access practices.</p>
+            <div class="cert-footer">
+              <span class="cert-issuer">Cisco Networking Academy</span>
+              <span class="cert-status">Verified</span>
+            </div>
+          </article>
+
+          <article class="cert-card glass reveal" data-issuer="cisco">
+            <div class="cert-badge cisco">Cisco</div>
+            <h3>Hardware and Upgrade Support</h3>
+            <p>PC assembly, hardware diagnostics, component upgrades, and maintenance procedures.</p>
+            <div class="cert-footer">
+              <span class="cert-issuer">Cisco Networking Academy</span>
+              <span class="cert-status">Verified</span>
+            </div>
+          </article>
+        </div>
+        <div class="cert-counter reveal">
+          <div class="cert-counter-inner">
+            <span class="cert-counter-number" data-count="5">0</span>
+            <span class="cert-counter-label">Industry Certificates Earned</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Experience & Education -->
+    <section id="experience" class="section">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-tag">Journey</span>
+          <h2 class="section-title">Experience &amp; <span class="gradient-text">Education</span></h2>
+        </div>
+        <div class="timeline">
+          <article class="timeline-item reveal">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content glass">
+              <span class="timeline-date">Jan 2026 – May 2026</span>
+              <h3>Data Research Intern</h3>
+              <p class="timeline-org">Orkestra Communications — Quezon City</p>
+              <ul>
+                <li>Performed data validation, cleaning, and quality assurance checks</li>
+                <li>Identified inconsistencies and improved data accuracy across records</li>
+                <li>Supported workflow improvements by organizing structured data processes</li>
+                <li>Collaborated with team members to maintain data integrity and reporting accuracy</li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="timeline-item reveal">
+            <div class="timeline-dot edu"></div>
+            <div class="timeline-content glass">
+              <span class="timeline-date">2022 – 2026</span>
+              <h3>Bachelor of Science in Information Technology</h3>
+              <p class="timeline-org">FAITH Colleges</p>
+              <p>Focused on software development, networking, AI fundamentals, and systems administration.</p>
+            </div>
+          </article>
+
+          <article class="timeline-item reveal">
+            <div class="timeline-dot edu"></div>
+            <div class="timeline-content glass">
+              <span class="timeline-date">2020 – 2022</span>
+              <h3>Bachelor of Information Systems</h3>
+              <p class="timeline-org">FIDELIS Senior High School</p>
+              <p>Built early foundations in information systems, programming logic, and technology concepts.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="section section-alt">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-tag">Contact</span>
+          <h2 class="section-title">Let's <span class="gradient-text">Connect</span></h2>
+          <p class="section-desc">Open to Junior AI Engineer roles, internships, and collaboration opportunities.</p>
+        </div>
+        <div class="contact-grid">
+          <div class="contact-info reveal">
+            <a href="tel:+639349951281" class="contact-card glass">
+              <div class="contact-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+              </div>
+              <div>
+                <span class="contact-label">Phone</span>
+                <span class="contact-value">+63 934 995 1281</span>
+              </div>
+            </a>
+            <a href="mailto:genarotampol13@gmail.com" class="contact-card glass">
+              <div class="contact-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+              </div>
+              <div>
+                <span class="contact-label">Email</span>
+                <span class="contact-value">genarotampol13@gmail.com</span>
+              </div>
+            </a>
+            <div class="contact-card glass">
+              <div class="contact-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+              </div>
+              <div>
+                <span class="contact-label">Location</span>
+                <span class="contact-value">Tanauan City, Batangas</span>
+              </div>
+            </div>
+          </div>
+          <form class="contact-form glass reveal" id="contactForm" novalidate>
+            <div class="form-group">
+              <label for="name">Name</label>
+              <input type="text" id="name" name="name" placeholder="Your name" required autocomplete="name">
+            </div>
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" placeholder="your@email.com" required autocomplete="email">
+            </div>
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" rows="4" placeholder="Your message..." required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary btn-full">Send Message</button>
+            <p class="form-status" id="formStatus" role="status" aria-live="polite"></p>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; 2026 Genaro Lucas C. Tampol. Built with HTML, CSS &amp; JavaScript.</p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
