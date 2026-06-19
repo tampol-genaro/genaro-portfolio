@@ -138,10 +138,10 @@
   const typedEl = document.getElementById('typedText');
   if (typedEl) {
     const phrases = [
-      'IT Support Specialist',
-      'Systems Administrator',
-      'Network Administrator',
-      'Helpdesk Technician'
+      'Aspiring IT Professional',
+      'Entry-Level IT Candidate',
+      'Homelab Builder',
+      'IT Support Enthusiast'
     ];
     let phraseIndex = 0;
     let charIndex = 0;
